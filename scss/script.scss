@@ -1,0 +1,1584 @@
+html{
+	scroll-behavior: smooth;
+}
+/*COLOR DE FONDO TRAS LA PAGINA*/
+.webBackgroundColor{
+	background-color: gray;
+	margin: 0;
+}
+/*COLOR DE FONDO DE LA PAGINA*/
+.webBodyColorWhite{
+	background-color: white;
+	/*background-color: rgb(112,161,225);*/
+}
+.webBodyColorGainsboro{
+	background-color: gainsboro;
+}
+.webBodyColorGhostwhite{
+	background-color: ghostwhite;
+}
+.webBodyBackground{
+	background-image: url(../Assets/Imagenes/backgroundHome.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*MARGEN DE PAGINA*/
+.webMargen{
+	min-height: 500px;
+}
+.webLinkNoColor a{
+	text-decoration: none;
+	color: inherit;
+}
+.webLinkNoColorB {
+	text-decoration: none;
+	color: inherit;
+}
+.webNoMargenContainer{
+	margin: 0;
+	padding-right:0;
+    padding-left:0;
+    overflow: hidden;
+}
+/*-----------------------------------BOOTSTRAP-----------------------------------*/
+/*-----------------------------------HEADERBTSP-----------------------------------*/
+.header__box{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.header__logo img{
+	width: 1.5vw;
+}
+.header__logo{
+	color: inherit;
+	font-size: 1.2vw;
+	font-weight: bold;
+	align-self: center;
+	padding-right:0;
+    padding-left:0;
+}
+.header__navigation{
+	width: 100%;
+	justify-content: center;
+	font-size: 1.2vw;
+	align-items: center;
+}
+.header__navigation--margen{
+	margin-right: 4vw;
+}
+.header__navigation--margen:hover{
+	background-color: rgb(226,230,234);
+	border-radius: 10px;
+}
+.header__navigation--margenServicios:hover{
+	background-color: rgb(226,230,234);
+	border-radius: 10px;
+}
+.header__buyButton{
+	background-color: rgb(67, 151, 204);
+	color: white;
+	overflow: hidden;
+	font-size: 2vw;
+}
+.header__buyButton:hover{
+	background-color: rgb(57,141,194)
+}
+
+.header__buyButton img{
+	width: 2vw;
+}
+.header__buyButton:hover img{
+	animation-name: carroAnimacion;
+	animation-iteration-count: 1;
+  	animation-timing-function: ease-out;
+  	animation-duration: 0.5s;
+  	animation-delay: 0.1s;
+}
+@keyframes carroAnimacion{
+	0%{transform: rotateZ(0deg); transform: scale(1.2);}
+	25%{transform: rotateZ(5deg)}
+	50%{transform: rotateZ(-10deg)}
+	75%{transform: rotateZ(5deg)}
+	100%{transform: rotateZ(0deg)}
+}
+/*-----------------------------------INDEXBTSP-----------------------------------*/
+#espacioVacioResponsive{
+	display: all;
+
+}
+#carrusel{
+	margin: 0;
+	padding-right:0;
+    padding-left:0;
+}
+.homeCarouselControlIzq{
+	background-color: black;
+	width: 1vw;
+}
+.homeCarouselControlDer{
+	background-color: black;
+	width: 1vw;
+}
+.homeCarouselTextA{
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	width: 45vw;
+	font-family: century gothic;
+	margin-left: 45vw;
+	margin-top: 1vw;
+}
+.homeCarouselTextB{
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	width: 43vw;
+	font-family: century gothic;
+	margin-left: 9vw;
+	margin-top: 2vw;
+}
+.homeCarouselTextC{
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	width: 40vw;
+	font-family: century gothic;
+	margin-left: 9vw;
+	margin-top: 2vw;
+	color: white;
+}
+.homeCarouselTextTituloA{
+	font-size: 4.5vw;
+	font-weight: bold;
+}
+.homeCarouselTextTituloB{
+	font-size: 3.5vw;
+	font-weight: bold;
+}
+.homeCarouselTextContenidoA{
+	font-size: 1.56vw;
+}
+.homeCarouselTextContenidoB{
+	padding-top: 1vw;
+	font-size: 1.56vw;
+}
+.homeCarouselImg img{
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+.homeBienvenidaBannerBtsp{
+	margin: 0;
+	padding-right:0;
+    padding-left:0;
+}
+.homeBienvenidaBannerBtsp img{
+	width: 100%;
+}
+.homeBienvenidaTituloBtsp{
+	font-size: 4vw;
+	font-weight: bold;
+}
+.homeBienvenidaContenidoBtsp{
+	font-size: 1.5vw;
+}
+.homeBoxesBackgroundBtsp{
+    height: 30vw;
+	overflow: hidden;
+	padding-right:0;
+    padding-left:0;
+    margin-top:3vw;
+    margin-bottom: 2vw;
+    box-shadow:0vw 0vw 1.5vw;
+}
+.homeBoxesBackgroundA{
+	margin-right: 2vw;
+}
+.homeBoxesBackgroundB{
+	margin-left: 2vw;
+}
+.homeBoxesBackgroundBtsp a{
+	margin-top: 1.5vw;
+	width: 15vw;
+	font-size: 1vw;
+}
+.homeBoxesBackgroundBtsp video{
+	position: absolute;
+	height: 100%;
+	z-index: 0;
+	filter: grayscale(100);
+	opacity: 0.6;
+	transform: translateX(-20vw);
+}
+.homeBoxesBackgroundBtsp img{
+	position: absolute;
+	height: 100%;
+	z-index: 0;
+	filter: grayscale(100);
+	opacity: 0.6;
+}
+.homeBoxesBackgroundBtsp:hover video{
+	filter: blur(0.1vw);
+	opacity: 0.8;
+}
+.homeBoxesBackgroundBtsp:hover img{
+	filter: blur(0.1vw);
+	opacity: 0.8;
+}
+.homeBoxesLettersBtsp{
+	z-index: 2;
+	color: white;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+    height: 30vw;
+	background-color: rgba(0,91,164,0.7);
+	padding: 1vw;
+}
+.homeBoxesLettersTituloBtsp{
+	padding-top: 1vw;
+	font-size: 1.7vw;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.homeBoxesLettersContenidoBtsp{
+	padding-top: 3vw;
+	font-size: 1.7vw;
+	line-height: 3vw;
+	height: 18vw;
+}
+.homeContactoBgkBtsp{
+	background-color:rgb(186,215,249);
+}
+.homeContactoBgkBtsp:hover{
+	background-color:rgb(166,195,229);
+}
+.homeContactoLettersBtsp{
+	font-size: 5vw;
+	text-align: center;
+}
+.homeContactoImgBtsp img{
+	width: 100%;
+	height: 15vw;
+}
+.homeContactoImgBtsp{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*-----------------------------------FOOTERBTSP-----------------------------------*/
+.footerBtsp{
+	font-size: 2vw;
+	margin-top: 1vw;
+}
+.footerBtsp img{
+	margin-left: 0.5vw;
+	height: 3vw;
+}
+/*CSS SIN FRAMEWORK*/
+/*-----------------------------------HEADER-----------------------------------*/
+
+.menuBox{
+	position: sticky;
+	z-index: 10;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	background-color: rgb(237,237,237);
+	justify-content: space-between;
+}
+/*..LOGO..*/
+.menuLogo{
+	align-self: center;
+	display: flex;
+	flex-direction: row;
+	margin-left: 2%;
+}
+.menuLogoImg img{
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+}
+.menuLogoLetters{
+	align-self: center;
+	font-family: century gothic;
+	font-size: 20px;
+}
+.menuLinks{
+	align-self: center;
+	text-align: center;
+	width: 100%;
+	font-family: century gothic;
+}
+.menuLinksMargin a{
+	margin-right: 5%;
+	margin-left: 5%;
+}
+.menuCarro {
+	display: flex;
+	background-color: rgb(67,151,204);
+	width: 20vh;
+}
+.menuCarro:hover{
+	background-color: rgb(57,141,194);
+}
+.menuCarro:hover img{
+	animation-name: carroAnimacion;
+	animation-iteration-count: 1;
+  	animation-timing-function: ease-out;
+  	animation-duration: 0.5s;
+  	animation-delay: 0.1s;
+}
+@keyframes carroAnimacion{
+	0%{transform: rotateZ(0deg); transform: scale(1.2);}
+	25%{transform: rotateZ(5deg)}
+	50%{transform: rotateZ(-10deg)}
+	75%{transform: rotateZ(5deg)}
+	100%{transform: rotateZ(0deg)}
+}
+.menuCarroImg img{
+	object-fit: contain;
+	width: auto;
+  	max-width: 200vh;
+ 	height: auto;
+  	max-height: 50px;
+  	padding:0.2vw;
+}
+.menuCarroLetters{
+	color: white;
+	align-self: center;
+	font-family: century gothic;
+	font-size: 3vh;
+	margin-right: 2vh;
+	margin-left: 2vh;
+}
+/*SUB-MENU SERVICIOS NAV*/
+.menuSubMenu{
+	display: inline-block;
+  	width: 12%;
+  	position:relative;
+}
+.menuSubMenuH:hover .menuSubMenuOculto{
+	background-color: rgb(237,237,237);
+	border-style: groove;
+	border-top: none;
+	padding-top: 11%;
+	display: block;
+	position: absolute;
+	width: 100%;
+	text-align: left;
+
+}
+.menuSubMenuOculto{
+	display: none;
+	text-decoration: underline;
+}
+/*-----------------------------------PIE DE PAGINA-----------------------------------*/
+.webBackgroundColorFooter{
+	background: linear-gradient(to top, #ffffff 0%, #d1d1d1 100%);
+}
+.webFooterSeparador fieldset{
+	clear: left;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	text-align: center; 
+	color: gray;
+}
+.webRedesIconos img{
+	border-radius: 50%;
+	width: 50px;
+	height:50px;
+}
+/*-----------------------------------INDEX-----------------------------------*/
+/*FLEXPADRE BANNER BIENVENIDA*/
+.homeBienvenida{
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: rgb(186,215,249);
+}
+/*FLEXHIJO BANNER BIENVENIDA*/
+	.homeBienvenidaImg img{
+		height: 25vw;
+}
+	.homeBienvenidaLetters{
+		height: 25vw;
+		background-color:rgb(186,215,249);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+}
+	.homeBienvenidaTitulo{
+		text-align: center;
+		font-weight: bold;
+		font-size: 4.5vw;
+		font-family: century gothic;
+}
+	.homeBienvenidaContenido{
+		margin-right: 2%;
+		text-align: center;
+		font-size: 1.56vw;
+		font-family: century gothic;
+}
+/*FLEXPADRE CONTENIDO*/
+.homeFlexPadre{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+/*FLEXHIJO CONTENIDO*/
+.homeFlexHijo{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	max-width: 33.3vw;
+	min-height: 30vw;
+	overflow: hidden;
+	height: 100%;
+	background-color: rgba(0,91,164,0.7);
+	/*rgb(225, 225, 231)*/
+}
+	.homeFlexHijoTitulo{
+		text-align: center;
+		font-weight: bold;
+		font-size: 3.5vw;
+		font-family: century gothic;
+		padding-top: 2vw;
+		color: white;
+	}
+	.HomeFlexHijoContenido{
+		margin-top: 10%;
+		margin-right: 5%;
+		margin-left: 5%;
+		text-align: left;
+		font-size: 2vw;
+		font-family: century gothic;
+		color: white;
+	}
+
+/*FONDOS DE LAS CAJAS*/
+.backgroundFlexbox {
+    position: relative;
+    overflow: hidden;
+}
+.backgroundFlexbox img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+	filter: grayscale(100);
+}
+.backgroundFlexbox video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+	filter: grayscale(100);
+}
+.backgroundFlexbox:hover img{
+	opacity: 0.6;
+	filter: grayscale(0);
+}
+.backgroundFlexbox:hover video{
+	opacity: 0.6;
+	filter: grayscale(0);
+}
+/*BANNER CONTACTO*/
+.homeContacto{
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(186,215,249);
+	justify-content: space-between;
+}
+.homeContactoTitulo{
+	align-self: center;
+	margin-left: 10%;
+	font-weight: bold;
+	font-size: 3.5vw;
+	font-family: century gothic;
+	color: rgb(50,50,50);
+}
+.homeContactoImg img{
+	height: 15vw;
+}
+.homeContacto:hover .homeContactoImg{
+	opacity: 0.6;
+}
+.homeContacto:hover .homeContactoTitulo{
+	color: black;
+}
+.homeContacto:hover{
+	background-color: rgba(186,215,249,0.6);
+}
+
+/*-----------------------------------SERVICIOS.HTML-----------------------------------*/
+/*INDICE*/
+.serviciosIndiceBrg{
+	background-image: url(../Assets/Imagenes/BienvenidaServiciosBanner.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 80% 150%;
+	background-color: black;
+}
+.serviciosIndiceTexto{
+	height: 10vw;
+	font-family: roboto,sans-serif;
+	color: white;
+	text-align: left;
+}
+.serviciosIndiceTitulo{
+	font-size: 2.5vw;
+}
+.serviciosIndiceContenido{
+	padding-top: 1vw;
+	font-size: 1.2vw;
+}
+.serviciosNotaPostBanner{
+	margin-top: 2vw;
+	margin-left: 33%;
+	text-align: center;
+	font-family: roboto,sans-serif;
+	background-color: white;
+	font-size: 1vw;
+	color: black;
+	width: 32vw;
+	position: absolute;
+	z-index: 5;
+}
+.serviciosNotaPostBannerBorder{
+	border-top: solid;
+	color: gray;
+	transform: translate(19vw , 2.5vw);
+	width: 60vw;
+	position: absolute;
+	z-index: 0;
+}
+/*GRILLA DE NAVEGACION SERVICIOS*/
+#grillaNavServicios{
+	display: grid;
+	/*justify-content: center;*/
+	align-items: center;
+	grid-template-areas: 
+	"SNavImgA . SNavTextA . SNavImgB . SNavTextB"
+	"SNavImgC . SNavTextC . SNavImgD . SNavTextD"
+	;
+	grid-template-rows: 15vw 15vw;
+	grid-template-columns: 0fr 1vw 20vw 1fr 0fr 1vw 20vw;
+	margin-bottom: 10vw;
+	margin-top: 5vw;
+}
+div#imgNavA{
+	grid-area: SNavImgA
+}
+div#flexNavA{
+	grid-area: SNavTextA
+}
+div#imgNavB{
+	grid-area: SNavImgB
+}
+div#flexNavB{
+	grid-area: SNavTextB
+}
+div#imgNavC{
+	grid-area: SNavImgC
+}
+div#flexNavC{
+	grid-area: SNavTextC
+}
+div#imgNavD{
+	grid-area: SNavImgD
+}
+div#flexNavD{
+	grid-area: SNavTextD
+}
+
+
+.serviciosNavImg img{
+	width: 15vw;
+	height: 12vw;
+	filter: drop-shadow(0 0 1vw gray);
+}
+.serviciosNavImg img:hover{
+	transition: all 0.3s;
+	transform:scale(1.1,1.1);
+}
+/*FLEXBOX NAVEGACION SERVICIOS*/
+.flxServiciosNavPadre{
+	display: flex;
+	flex-direction: column;
+}
+.flxServiciosNavTitulo{
+	font-family: verdana;
+	font-size: 1.5vw;
+	font-weight: bold;
+	margin-bottom: 0.5vw;
+}
+.flxServiciosNavContenido{
+	font-family: verdana;
+	font-size: 1.3vw;
+	max-height: 20vw;
+}
+.flxBotonLeerMas{
+	margin-top: 1vw;
+	text-align: left;
+	padding-left: 0.5vw;
+	width: 10vw;
+	font-family: verdana;
+	font-size: 1.2vw;
+	background-color: gold;
+}
+.flxBotonLeerMas:hover{
+	background-color: yellow;
+}
+.flxBotonLeerMasimg{
+	width: 2vw;
+	position: absolute;
+	transform: translate(-2vw,2.5vw);
+}
+/*BOTON VOLVER AL INICIO*/
+.serviciosBotonInicio{
+	position: sticky;
+	float: right;
+	top: 90%;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 50px 0 0 50px;
+	z-index: 5;
+}
+.serviciosBotonInicio img{
+	width: 8vw;
+}
+/*BANNERS DE ARTICULOS*/
+.serviciosBannerArticulosCelulares{
+	background-image: url(../Assets/Imagenes/serviciosBannerCelulares.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 80% 100%;
+	background-color: black;
+}
+.serviciosBannerArticulosComputadoras{
+	background-image: url(../Assets/Imagenes/serviciosBannerComputadoras.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 80% 100%;
+	background-color: black;
+}
+.serviciosBannerArticulosServidores{
+	background-image: url(../Assets/Imagenes/serviciosBannerServidores.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 80% 100%;
+	background-color: black;
+}
+.serviciosBannerArticulosEdicion{
+	background-image: url(../Assets/Imagenes/serviciosBannerEdicion.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 80% 100%;
+	background-color: black;
+}
+.serviciosBannerArticulosTex{
+	height: 8vw;
+	padding-top: 1.5vw;
+	padding-left: 1vw;
+	font-size: 3vw;
+	font-family: century gothic;
+	color: white;
+	text-align: left;
+}
+/*ARTICULO REPARACION CELULARES*/
+#grillaServiciosArtCelulares{
+	clear: right;
+	display: grid;
+	grid-template-areas:
+	". SArtCImgA SArtCTextA . SArtCImgB SArtCTextB ."
+	". SArtCImgC SArtCTextC . SArtCImgD SArtCTextD ."
+	". SArtCImgE SArtCTextE . SArtCImgF SArtCTextF ."
+	"SArtCFooterI SArtCFooterI SArtCFooterT SArtCFooterT SArtCFooterT SArtCFooterT SArtCFooterT"
+	;
+	grid-template-columns: 1fr 20vw 20vw 2vw 20vw 20vw 1fr;
+	justify-content: center;
+	grid-row-gap: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+}
+#grillaServiciosArtComputadoras{
+	clear: right;
+	display: grid;
+	grid-template-areas:
+	". SArtPCImgA SArtPCTextA . SArtPCImgB SArtPCTextB ."
+	". SArtPCImgC SArtPCTextC . SArtPCImgD SArtPCTextD ."
+	". SArtPCImgE SArtPCTextE . SArtPCImgF SArtPCTextF ."
+	"SArtPCFooterI SArtPCFooterI SArtPCFooterT SArtPCFooterT SArtPCFooterT SArtPCFooterT SArtPCFooterT"
+	;
+	grid-template-columns: 1fr 20vw 20vw 2vw 20vw 20vw 1fr;
+	justify-content: center;
+	grid-row-gap: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+}
+#grillaServiciosArtServidores{
+	clear: right;
+	display: grid;
+	grid-template-areas:
+	". SArtSImgA SArtSTextA . SArtSImgB SArtSTextB ."
+	". SArtSImgC SArtSImgC SArtSTextC SArtSTextC SArtSTextC ."
+	". SArtSImgD SArtSImgD SArtSTextD SArtSTextD SArtSTextD ."
+	". SArtSImgE SArtSImgE SArtSTextE SArtSTextE SArtSTextE ."
+	;
+	grid-template-columns: 1fr 20vw 20vw 2vw 20vw 20vw 1fr;
+	justify-content: center;
+	grid-row-gap: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+}
+#grillaServiciosArtEdicion{
+	display: grid;
+	grid-template-areas:
+	". SArtEDImgA SArtEDTextA . SArtEDImgB SArtEDTextB ."
+	". SArtEDImgC SArtEDTextC . SArtEDImgD SArtEDTextD ."
+	;
+	grid-template-columns: 1fr 20vw 20vw 2vw 20vw 20vw 1fr;
+	justify-content: center;
+	grid-row-gap: 2vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+}
+/*Aqui van todos los grid-area para los articulos de la pagina de servicios
+esta seccion es asquerosamente larga asi que no hay nada interesante por un rato
+decidi acomodar los selectores de otra forma para ahorrar espacio
+cada tag header indica un inicio de articulo
+
+Las silabas significan:
+"Pagina correspondiente (S = Servidores.html)" 
+"Articulo (ART)" 
+"Nombre de articulo (C = Celulares, PC = Computadoras, S = Servidores, ED = Edicion)" 
+"Tipo de contenido (Img = imagen, Text = texto, Banner = Inicio, Footer = Final)" 
+"Orden" 
+*/
+/*-------ARTICULO DE CELULARES-------*/
+header#bannerCelulares{grid-area: SArtCBanner;}
+div#imgSCelularesA{grid-area: SArtCImgA ;}
+div#TextSCelularesA{grid-area: SArtCTextA ;}
+div#imgSCelularesB{grid-area: SArtCImgB ; }
+div#TextSCelularesB{grid-area: SArtCTextB ;}
+div#imgSCelularesC{grid-area: SArtCImgC ;}
+div#TextSCelularesC{grid-area: SArtCTextC ;}
+div#imgSCelularesD{grid-area: SArtCImgD ;}
+div#TextSCelularesD{grid-area: SArtCTextD ;}
+div#imgSCelularesE{grid-area: SArtCImgE ;}
+div#TextSCelularesE{grid-area: SArtCTextE ;}
+div#imgSCelularesF{grid-area: SArtCImgF ;}
+div#TextSCelularesF{grid-area: SArtCTextF ;}
+div#footerCelularesImg{grid-area: SArtCFooterI;}
+div#footerCelularesText{grid-area: SArtCFooterT;}
+header#bannerComputadoras{grid-area: SArtPCBanner;}
+div#imgSComputadorasA{grid-area: SArtPCImgA;}
+div#TextSComputadorasA{grid-area: SArtPCTextA;}
+div#imgSComputadorasB{grid-area: SArtPCImgB;}
+div#TextSComputadorasB{grid-area: SArtPCTextB;}
+div#imgSComputadorasC{grid-area: SArtPCImgC;}
+div#TextSComputadorasC{grid-area: SArtPCTextC;}
+div#imgSComputadorasD{grid-area: SArtPCImgD;}
+div#TextSComputadorasD{grid-area: SArtPCTextD;}
+div#imgSComputadorasE{grid-area: SArtPCImgE;}
+div#TextSComputadorasE{grid-area: SArtPCTextE;}
+div#imgSComputadorasF{grid-area: SArtPCImgF;}
+div#TextSComputadorasF{grid-area: SArtPCTextF;}
+div#footerComputadorasImg{grid-area: SArtPCFooterI;}
+div#footerComputadorasText{grid-area: SArtPCFooterT;}
+header#bannerServidores{grid-area: SArtSBanner;}
+div#imgSServidoresA{grid-area: SArtSImgA;}
+div#TextSServidoresA{grid-area: SArtSTextA;}
+div#imgSServidoresB{grid-area: SArtSImgB;}
+div#TextSServidoresB{grid-area: SArtSTextB;}
+div#imgSServidoresC{grid-area: SArtSImgC;}
+div#TextSServidoresC{grid-area: SArtSTextC;}
+div#imgSServidoresD{grid-area: SArtSImgD;}
+div#TextSServidoresD{grid-area: SArtSTextD;}
+div#imgSServidoresE{grid-area: SArtSImgE;}
+div#TextSServidoresE{grid-area: SArtSTextE;}
+header#bannerEdicion{grid-area: SArtEDBanner;}
+div#imgSEdicionA{grid-area: SArtEDImgA;}
+div#TextSEdicionA{grid-area: SArtEDTextA;}
+div#imgSEdicionB{grid-area: SArtEDImgB;}
+div#TextSEdicionB{grid-area: SArtEDTextB;}
+div#imgSEdicionC{grid-area: SArtEDImgC;}
+div#TextSEdicionC{grid-area: SArtEDTextC;}
+div#imgSEdicionD{grid-area: SArtEDImgD;}
+div#TextSEdicionD{grid-area: SArtEDTextD;}
+
+/*FlexArticulos*/
+.serviciosArtCelularesImg img{
+	width: 20vw;
+	height: 15vw;
+	border-radius: 20px 0 0 20px ;
+}
+.serviciosArtServerOfertaImg img{
+	width: 100%;
+	height: 15vw;
+	border-radius: 20px 0 0 20px ;
+}
+.flexSCelulares{
+	display: flex;
+	flex-direction: column;
+	height: 15vw;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 0 20px 20px 0 ;
+	padding-left: 1vw;
+}
+.flxBotonContacto{
+	align-self: flex-end;
+	justify-content: flex-end;
+	color: black;
+	margin-top: 1.5vw;
+	margin-left: 8vw;
+	text-align: left;
+	padding-left: 10px;
+	width: 11vw;
+	font-family: verdana;
+	font-size: 1.3vw;
+	font-weight: bold;
+	background-color: gold;
+	border-radius: 2vw;
+	box-shadow: 0.3vw 0.3vw rgba(0,0,0,0.7);
+}
+.flxBotonContactoTienda{
+	align-self: flex-end;
+	justify-content: flex-end;
+	color: black;
+	margin-top: 1.5vw;
+	margin-left: 26vw;
+	text-align: left;
+	padding-left: 10px;
+	width: 15vw;
+	font-family: verdana;
+	font-size: 1.3vw;
+	font-weight: bold;
+	background-color: gold;
+	border-radius: 2vw;
+	box-shadow: 0.3vw 0.3vw rgba(0,0,0,0.7);
+}
+.flxBotonContactoTienda:hover{
+	background-color: yellow;
+}
+.flxBotonContacto:hover{
+	background-color: yellow;
+}
+.flxBotonContacto img{
+	width: 2vw;
+	position: absolute;
+}
+.serviciosArticuloImgFooter img{
+	width: 100%;
+	height: 100%;
+}
+.flxFooterArtLetters{
+	background: linear-gradient(to right, rgb(229,229,229) 0%, rgb(229,229,229) 10%, rgba(0,0,0,0) 100%);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 1vw;
+	padding-left: 0.5vw;
+	padding-right: 10vw;
+}
+.flxFooterArtIcons{
+	display: flex;
+	flex-direction: row;
+
+}
+.flxFooterArtIcons img{
+	width: 7.5vw;
+}
+
+/*TITULOS*/
+.serviciosTitulos{
+	border-top: solid;
+	background-color: rgba(255,255,255,0.6);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 30px;
+	font-family: tahoma black;
+}
+/*LETRA PEQUEÑA*/
+.serviciosDisclaimer{
+	text-align: center;
+	font-size: 15px;
+	background-color: rgba(255,255,255,0.5);
+}
+/*MEDIDAS DE LAS TABLAS*/
+.serviciosTablaMedidas{
+	margin-left: 18%;
+	width: 60vw;
+}
+table{
+	border-collapse: collapse;
+}
+.serviciosFuenteTitulo th{
+	border: solid;
+	background-color: silver;
+	font-size: 25px;
+	font-family: tahoma;
+}
+
+.serviciosFuenteContenido td{
+	border: solid;
+	background-color: ghostwhite;
+	font-size: 25px;
+	font-family: tahoma;
+}
+/*FONDO DE CONTENIDOS Y TABLAS*/
+.serviciosBackground{
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% 100%;
+}
+.serviciosBrgCelulares{
+	background-image: url(../Assets/Imagenes/serviciosCelularesBgr.png);
+}
+.serviciosBrgComputadoras{
+	background-image: url(../Assets/Imagenes/serviciosComputadorasBgr.png);
+}
+.serviciosBrgServidores{
+	background-image: url(../Assets/Imagenes/serviciosServidoresBgr.png);
+}
+.serviciosBrgEdicion{
+	background-image: url(../Assets/Imagenes/serviciosEdicionBgr.png);
+}
+/*PIE DE PAGINA CON LINK A CONTACTO*/
+.serviciosReminderBox{
+	border: none;
+	margin-left: 20%;
+	text-align: center;
+	width: 60vw;
+}
+.serviciosReminderText{
+	text-align: center;
+	font-size: 2vw;
+	font-family: tahoma black;
+}
+.serviciosContactoimg img{
+	border-style: outset;
+	border-radius: 20%;
+	border-color: silver;
+}
+/*-----------------------------------TIENDA.HTML-----------------------------------*/
+/*INDICE*/
+.tiendaIndiceBrg{
+	background-image: url(../Assets/Imagenes/BienvenidaTiendaBanner.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100% 100%;
+	border-bottom: solid;
+}
+.tiendaIndiceLista{
+	height: 227px;
+	font-size: 25px;
+	font-family: roboto,sans-serif;
+	color: white;
+}
+.tiendaPaddingInicial{
+	padding-top:2vw;
+}
+#grillaTienda{
+	display: grid;
+	grid-template-areas: 
+	"tiendaBox tiendaBox tiendaBox tiendaBox tiendaBox tiendaBox tiendaBox tiendaBox"
+;
+	grid-template-columns: auto 10vw 10vw 10vw 10vw 10vw 10vw auto;
+	grid-template-rows: auto;
+}
+section#anuncioMouseGamer{
+	grid-area: anuncioMouse;
+}
+section#iconosInicioTienda{
+	grid-area: icoInicio;
+}
+section#iconosSubSeccionTienda{
+	grid-area: icoSub;
+	background: linear-gradient(to bottom, #ffffff 0%, #dedede 100%);
+}
+section#tiendaBox{
+	grid-area: tiendaBox;
+}
+
+/*FlexBox de los iconos iniciales*/
+.flxIconosTienda{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.flxIconosTienda img{
+	width: 10vw;
+	height: 7vw;
+}
+.flxIconosSubTienda{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.flxIconosSubTienda img{
+	width: 8vw;
+	height: 5vw;
+}
+.flxIconosTiendaPack{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: roboto,sans-serif;
+	font-size: 0.9vw;
+	background-color: none;
+}
+.flxIconosTiendaPack:hover{
+	transition: all 0.2s;
+	transform: scale(1.2,1.2);
+}
+.flxIconosSubTiendaPack{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: roboto,sans-serif;
+	padding-bottom: 1vw;
+}
+section#subMenuComputadorasTienda{
+	display: none;
+}
+section#subMenuComputadorasTienda:target{
+	display: flex;
+}
+section#subMenuNotebooksTienda{
+	display: none;
+}
+section#subMenuNotebooksTienda:target{
+	display: flex;
+}
+section#subMenuCelularesTienda{
+	display: none;
+}
+section#subMenuCelularesTienda:target{
+	display: flex;
+}
+section#subMenuServidoresTienda{
+	display: none;
+}
+section#subMenuServidoresTienda:target{
+	display: flex;
+}
+section#subMenuCamarasSeguridadTienda{
+	display: none;
+}
+section#subMenuCamarasSeguridadTienda:target{
+	display: flex;
+}
+.tiendaFakeMargin{
+	margin-top: -11vw;
+	padding-top: 12vw;
+}
+.tiendaListadoBox img{
+	width: 20vw;
+	height: 15vw;
+}
+.tiendaBuscador{
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+	text-align: center;
+}
+.tiendaBuscadorBox{
+	width: 35vw;
+	height: 1.5vw;
+	font-size: 1.5vw;
+	font-family: roboto, sans-serif;
+	color: rgba(0,0,0,0.9);
+}
+.tiendaBuscadorBox:focus{
+	transition: all 0.5s;
+	width: 40vw;
+	height: 2vw;
+	box-shadow: 0px 0px 10px;
+}
+.tiendaBuscadorBoton{
+	width: 8vw;
+	height: 2vw;
+	font-size: 1.2vw;
+	font-family: roboto, sans-serif;
+	color: rgba(0,0,0,0.8);
+}
+.tiendaListadoItems{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.flxItemsTienda{
+	display: flex;
+	width: 40vw;
+	height: 20vw;
+	border-bottom: groove;
+	border-radius: 4vw;
+	overflow: hidden;
+	background-color:white;
+	margin-bottom: 1vw;
+}
+.flxItemsTienda img{
+	align-self: center;
+}
+.tiendaListadoItemsLetters{
+	display: flex;
+	flex-direction: column;
+}
+.tiendaListadoItemsLTitulo{
+	font-family: roboto, sans-serif;
+	font-size: 1.5vw;
+	padding-top: 1vw;
+}
+.tiendaListadoItemsLContenido{
+	font-family: roboto, sans-serif;
+	font-size: 1vw;
+	padding-top: 0.5vw;
+}
+.tiendaListadoItemsLPrecio{
+	font-family: roboto, sans-serif;
+	color: green;
+	font-size: 1.5vw;
+	padding-top: 0.5vw;
+}
+.tiendaListadoItemsPag{
+	justify-content: center;
+	margin-bottom: 1vw;
+	font-family: roboto, sans-serif;
+	font-size: 1vw;
+	padding-top: 1vw;
+}
+/*PROPAGANDAS*/
+@keyframes backgroundMouseRazer{
+	0% {background-color: rgb(0,255,0);}
+	25% {background-color: rgb(255,0,0);}
+	50% {background-color: rgb(255,0,255);}
+	75% {background-color: rgb(0,112,255);}
+	100% {background-color: rgb(0,255,0);}
+}
+.tiendaAnuncioAnimado{
+	background-color: white;
+	animation-name: backgroundMouseRazer;
+	animation-iteration-count: infinite;
+  	animation-timing-function: ease-in-out;
+  	animation-duration: 4s;
+  	animation-delay: 0s;
+  	height: 25vw;
+}
+.tiendaAnuncioAnimado img{
+	width: 100%;
+	height: 100%;
+}
+.tiendaBotonAgregar{
+	width: 15vw;
+	font-size: 1vw;
+	height: 2.5vw;
+}
+/*-----------------------------------CONTACTO.HTML-----------------------------------*/
+/*IMAGEN DE EMPRESA Y DATOS DE CONTACTO*/
+#grillaContacto{
+	display: grid;
+	grid-template-areas: 
+	"contactoBanner"
+	"contactoSeparadorA"
+	"contactoBoxes"
+	"contactoSeparadorB"
+	"contactoMapa"
+	"contactoCartel"
+	;
+	grid-template-rows: 0.74fr 5vw 1fr 5vw 1fr 20vw;
+	grid-template-columns: auto;
+}
+div#contactoBanner{
+	grid-area: contactoBanner;
+}
+div#contactoBoxes{
+	grid-area: contactoBoxes;
+}
+div#contactoSeparadorA{
+	grid-area: contactoSeparadorA;
+}
+div#contactoSeparadorB{
+	grid-area: contactoSeparadorB;
+}
+div#contactoMapa{
+	grid-area: contactoMapa;
+}
+div#contactoCartel{
+	grid-area: contactoCartel;
+}
+.contactoSeparador{
+	font-size: 1.8vw;
+	font-family: roboto,sans-serif;
+	text-align: center;
+	padding-top: 1vw;
+	font-weight: bold;
+	margin-bottom: 2vw;
+}
+.flxContactoBoxes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 5vw;
+}
+.flxContactoBoxesIndiv{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top:2vw;
+	border-radius:3vw;
+	width: 25vw;
+	height: 25vw;
+	background: linear-gradient(to bottom, #dbdbdb 0%, #ffffff 100%);
+}
+.flxContactoBoxesIndiv img{
+	width: 8vw;
+}
+.flxContactoBoxesTitulo{
+	font-size: 1.8vw;
+	font-family: roboto,sans-serif;
+	margin-bottom: 1vw;
+}
+.flxContactoBoxesSubTitulo{
+	font-size: 1vw;
+	font-family: roboto,sans-serif;
+	padding-top: 0.5vw;
+}
+.flxContactoBoxesContenido{
+	font-size: 1.2vw;
+	font-family: roboto,sans-serif;
+	padding-top: 0.5vw;
+}
+.flxContactoBoxesContenido img{
+	width: 3vw;
+}
+.flxContactoBoxesSocial{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left:5.5vw;
+}
+.contactoBienvenida{
+	background-color:rgb(186,215,249);
+	display: flex;
+}
+.contactoImgBienvenida img{
+	width: 35vw;
+	height: 20vw;
+}
+.contactoBienvenidaTitulo{
+	padding-top: 2vw;
+	font-size: 3vw;
+	font-family: roboto,sans-serif;
+}
+.contactoBienvenidaContenido{
+	width: 45vw;
+	padding-top: 2vw;
+	font-size: 1.5vw;
+	font-family: roboto,sans-serif;
+}
+#contactoMapa{
+	position:relative;
+	font-size: 1vw;
+	font-family: roboto,sans-serif;
+	display: flex;
+	align-items:flex-start;
+	width: 100%;
+	height: 21vw;
+}
+#contactoMapa iframe{
+	box-shadow:0.1vw 0.1vw 1vw;
+	width: 70vw;
+	height: 20vw;
+	border-radius:3vw;
+	margin-right:1vw;
+}
+.contactoMapaText{
+	margin-top: 3vw;
+}
+.contactoMapaText p, b{
+	font-size: 2vw;
+}
+.contactoMapaSub{
+	position:absolute;
+	margin-left:15vw;
+	z-index: 0;
+	background: linear-gradient(to right, #b1afaf 0%, #ffffff 100%);
+	width: 70%;
+	height: 20vw;
+}
+#contactoCartel{
+	text-align: center;
+	background-color: black;
+}
+#contactoCartel img{
+	height: 25vw;
+}
+/*FORMULARIO DE CONTACTO*/
+.contactoFormulario{
+	padding-left: 35%;
+	text-align: center;
+	max-width: 300px;
+	font-family: tahoma;
+}
+/*-----------------------------------CARRO.HTML-----------------------------------*/
+/*TABLA CON OBJETOS ADQUIRIDOS*/
+$margenC:1vw;
+$widthImagenC:20vw;
+$boxBorderRadius:20vw 20vw 0 0;
+$sizeFontBoxC:1.5vw;
+$sizeFontC:2vw;
+$heightBoxC:40vw;
+$gradientBoxC: linear-gradient(to bottom, #858585 0%, #ffffff 100%);
+$gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
+
+.carro--vacio{
+	text-align: center;
+	font-size: $sizeFontBoxC;
+	font-family: tahoma;
+}
+.carro--vacio img{
+	width: $widthImagenC;
+}
+.carro__listado h1{
+	font-size: $sizeFontC;
+	padding-top: $margenC;
+}
+.carro__ofertas{
+	margin-top: $margenC;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.carro__ofertas ul{
+	text-align: left;
+}
+.carro__ofertas h2{
+	font-size: $sizeFontC;
+	padding: $margenC;
+	font-weight: bold;
+}
+.carro--cajas{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: $sizeFontBoxC;
+	height: $heightBoxC;
+	background:$gradientBoxC;
+	border-radius: $boxBorderRadius;
+	width: $widthImagenC;
+
+}
+.carro--cajas img{
+	width: $widthImagenC;
+	height: $widthImagenC;
+	border-radius: $widthImagenC;
+}
+.carro--cajas:hover{
+	background:$gradientBoxCHover;
+}
+.carro--cajas:hover img{
+	filter: saturate(1.3);
+}
+.carro__marcas{
+	display: flex;
+	padding-top: $sizeFontC;
+}
+.carro--logos img{
+	width: 7.5vw;
+	height: 6vw;
+}
+/*-------------------------COSAS VIEJAS DEL INDEX ANTERIOR-------------------*/
+.homeBienvenida{
+	background-color:rgb(186,215,249);
+	overflow:hidden; 
+}
+.homeImgBienvenida img{
+	width: 51%;
+	float: left;
+}
+.homeTextoBienvenidaTitulo{
+	text-align: center;
+	font-size: 4.5vw;
+	font-family: century gothic;
+}
+.homeTextoBienvenidaContenido{
+	margin-right: 2%;
+	font-size: 1.56vw;
+	font-family: century gothic;
+}
+/*----------------------------------RESPONSIVE-----------------------------------*/
+@media(max-width: 768px){
+	#espacioVacioResponsive{
+	display: none;
+	}
+	/*INDEX*/
+	.homeCarouselControlIzq{
+		width: 2vw;
+	}
+	.homeCarouselControlDer{
+		width: 2vw;
+	}
+	.homeCarouselTextA{
+		position: absolute;
+		z-index: 2;
+		text-align: center;
+		width: 45vw;
+		font-family: century gothic;
+		margin-left: 45%;
+		margin-top: 1vw;
+	}
+	.homeCarouselTextB{
+		position: absolute;
+		z-index: 2;
+		text-align: center;
+		width: 43vw;
+		font-family: century gothic;
+		margin-left: 5%;
+		margin-top: 5vw;
+	}
+	.homeCarouselTextC{
+		position: absolute;
+		z-index: 2;
+		text-align: center;
+		width: 43vw;
+		font-family: century gothic;
+		margin-left: 5%;
+		margin-top: 2vw;
+		color: white;
+	}
+	.homeCarouselTextTituloA{
+		font-size: 5vw;
+		font-weight: bold;
+	}
+	.homeCarouselTextTituloB{
+		font-size: 4vw;
+		font-weight: bold;
+	}
+	.homeCarouselTextContenidoA{
+		font-size: 1.7vw;
+	}
+	.homeCarouselTextContenidoB{
+		padding-top: 1vw;
+		font-size: 1.56vw;
+	}
+	/*SERVICIOS*/
+	#grillaNavServicios{
+		justify-content: center;
+		grid-template-columns: 0fr 1vw 20vw 1.5vw 0fr 1vw 20vw;
+		margin-left: 2vw;
+	}
+	/*TIENDA*/
+	.tiendaFakeMargin{
+		margin-top: -15vw;
+		padding-top: 20vw;
+	}
+	.flxIconosTienda img{
+		width: 15vw;
+		height: 10vw;
+	}
+	.flxIconosSubTienda{
+		flex-wrap: wrap;
+	}
+	.flxIconosSubTienda img{
+		width: 12vw;
+		height: 8vw;
+	}
+	.flxIconosTiendaPack{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-family: roboto,sans-serif;
+		font-size: 2.5vw;
+		background-color: none;
+	}
+	.flxIconosTiendaPack:hover{
+		transition: all 0s;
+		transform: scale(1,1);
+	}
+	.flxIconosSubTiendaPack{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-family: roboto,sans-serif;
+		font-size: 2vw;
+		padding-left: 1.5vw;
+		padding-bottom: 1vw;
+	}
+	.tiendaBuscador{
+		margin-top: 3vw;
+		margin-bottom: 2vw;
+		text-align: center;
+	}
+	.tiendaBuscadorBox{
+		width: 45vw;
+		height: 4vw;
+		font-size: 1.5vw;
+		font-family: roboto, sans-serif;
+		color: rgba(0,0,0,0.9);
+	}
+	.tiendaBuscadorBox:focus{
+		transition: all 0.5s;
+		width: 50vw;
+		height: 4vw;
+		box-shadow: 0px 0px 10px;
+	}
+	.tiendaBuscadorBoton{
+		width: 12vw;
+		height: 4vw;
+		font-size: 2vw;
+		font-family: roboto, sans-serif;
+		color: rgba(0,0,0,0.8);
+	}
+	.tiendaListadoItems{
+		display: flex;
+		justify-content: center;
+	}
+	.flxItemsTienda{
+		width: 75vw;
+		height: 40vw;
+		margin-bottom: 2vw;
+	}
+	.flxItemsTienda img{
+		width: 35vw;
+		height: 25vw
+	}
+	.tiendaListadoItemsLTitulo{
+		font-family: roboto, sans-serif;
+		font-size: 3vw;
+		padding-top: 1vw;
+	}
+	.tiendaListadoItemsLContenido{
+		font-family: roboto, sans-serif;
+		font-size: 2vw;
+		padding-top: 0.5vw;
+	}
+	.tiendaListadoItemsLPrecio{
+		font-family: roboto, sans-serif;
+		color: green;
+		font-size: 3vw;
+		padding-top: 0.5vw;
+	}
+	.tiendaListadoItemsPag{
+		justify-content: center;
+		margin-bottom: 1vw;
+		font-family: roboto, sans-serif;
+		font-size: 2vw;
+		padding-top: 1vw;
+	}
+	.tiendaBotonAgregar{
+		width: 20vw;
+		font-size: 2vw;
+		height: 5vw;
+	}
+}

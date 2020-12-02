@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tech Inc.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="keywords" content="TECNOLOGIA, CELULARES, COMPUTADORAS, SERVIDORES, REPARACION, SERVICIO TECNICO, BUENOS AIRES">
+	<meta name="description" content="Tech Inc. es una empresa dedicada a la reparacion de celulares y computadoras, venta de accesorios, componentes y alquiler de servidores. Aqui podras encontrar todo lo que necesitas en soluciones tecnologicas para tus problemas.">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/script.css">
+	<link rel="shorcut icon" href="Assets/Imagenes/logoVentana.png" type="image/icon">
+</head>
+<body id="inicioPag" class="webBackgroundColor">
+
+	<header class="container-fluid header__box">
+		<div class="row flex-nowrap" style="background-color: ghostwhite;">
+
+			<div id="espacioVacioResponsive" class="col-1"></div>
+
+			<a href="#inicioPag" class="header__logo col-2">
+				<img src="Assets/Imagenes/logo.png" alt="logo">
+				<span>Tech.Inc</span>
+			</a>
+
+			<div class="col d-flex align-items-center">
+				<ul class="nav header__navigation">
+					<li class="nav-item header__navigation--margen">
+  						<a class="nav-link disabled" href="#">Inicio</a>
+					</li>
+					<li class="nav-item header__navigation--margenServicios">
+  						<a class="nav-link" href="Views/servicios.html">Servicios</a>
+					</li>
+						<button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split header__navigation--margen" data-toggle="dropdown">
+    						<span class="caret"></span>
+  						</button>
+  							<div class="dropdown-menu">
+    							<a class="dropdown-item" href="Views/servicios.html#bannerCelulares">Celulares</a>
+    							<a class="dropdown-item" href="Views/servicios.html#bannerComputadoras">Computadoras</a>
+    							<a class="dropdown-item" href="Views/servicios.html#bannerServidores">Servidores</a>
+    							<a class="dropdown-item" href="Views/servicios.html#bannerEdicion">Edicion</a>
+  							</div>
+					<li class="nav-item header__navigation--margen">
+  						<a class="nav-link" href="Views/tienda.html">Tienda</a>
+					</li>
+					<li class="nav-item header__navigation--margen">
+  						<a class="nav-link" href="Views/contacto.html">Contacto</a>
+					</li>
+  				</ul>
+  			</div>
+
+  			<a href="Views/carro.html" class="col-1 d-flex align-items-center header__buyButton">
+  				<img src="Assets/Imagenes/carroLogo.png">
+				<ul class="nav header__navigation">
+					<li class="nav-item">
+  						Carro
+					</li>
+				</ul>
+			</a>
+
+			<div id="espacioVacioResponsive" class="col-1"></div>
+
+	</header>
+	<main>
+		<div class="container-fluid ">
+			<div class="row justify-content-center">
+
+			<div id="carrusel" class="col d-block carousel slide" data-ride="carousel">
+				<ul class="carousel-indicators">
+					<li data-target="#carrusel" data-slide-to="0" class="active"></li>
+					<li data-target="#carrusel" data-slide-to="1"></li>
+					<li data-target="#carrusel" data-slide-to="2"></li>
+					<li data-target="#carrusel" data-slide-to="3"></li>
+				</ul>
+
+				<div class="carousel-inner homeCarouselImg">
+					<div class="carousel-item active">
+						<div class="homeCarouselTextA d-flex flex-column">
+							<div class="homeCarouselTextTituloA">
+								Bienvenido
+							</div>
+							<div class="homeCarouselTextContenidoA">
+								Tech Incorporated es una empresa de reparacion y venta de aparatos electronicos, con mas de 15 años de experiencia en el rubro, ayudandote a encontrar la mejor solucion tecnologica para tus problemas.
+							</div>
+							<div>
+								
+							</div>
+						</div>
+						<img src="Assets/Imagenes/homeBannerCarousel1.jpg" alt="Bienvenida">
+					</div>
+					<div class="carousel-item">
+						<div class="homeCarouselTextB d-flex flex-column">
+							<div class="homeCarouselTextTituloB">
+								Cientos de productos
+							</div>
+							<div class="homeCarouselTextContenidoB">
+								Contamos con mas de mil productos de las marcas mas reconocidas en el rubro de la tecnologia
+							</div>
+						</div>
+						<img src="Assets/Imagenes/homeBannerCarousel2.jpg" alt="Tienda">
+					</div>
+					<div class="carousel-item">
+						<div class="homeCarouselTextA d-flex flex-column">
+							<div class="homeCarouselTextTituloA">
+								Reparaciones
+							</div>
+							<div class="homeCarouselTextContenidoA">
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							</div>
+						</div>
+						<img src="Assets/Imagenes/homeBannerCarousel3.jpg" alt="Reparaciones">
+					</div>
+					<div class="carousel-item">
+						<div class="homeCarouselTextC d-flex flex-column">
+							<div class="homeCarouselTextTituloA">
+								Servidores
+							</div>
+							<div class="homeCarouselTextContenidoA">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+							</div>
+						</div>
+						<img src="Assets/Imagenes/homeBannerCarousel4.jpg" alt="Servidores">
+					</div>
+
+					<a class="carousel-control-prev homeCarouselControlIzq" href="#carrusel" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next homeCarouselControlDer" href="#carrusel" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+
+			</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="row" style="background-color: gainsboro;">
+				<div id="espacioVacioResponsive" class="col-1">
+					
+				</div>
+				<div class="col homeBoxesBackgroundBtsp homeBoxesBackgroundA">
+					<div class="">
+						<img src="Assets/Imagenes/tiendaPreview.jpg">
+					</div>
+					<div href="" class="homeBoxesLettersBtsp">
+						<div class="homeBoxesLettersTituloBtsp">
+							Visite la tienda virtual
+						</div>
+						<div class="homeBoxesLettersContenidoBtsp">
+							Contamos con las marcas mas reconocidas y prestigiadas del mundo, seguro encontrara lo que esta buscando!
+						</div>
+						<a href="Views/tienda.html" type="button" class="btn btn-success homeBoxesButtonPosition">Visitar la tienda »</a>
+					</div> 
+				</div>
+				<div class="col homeBoxesBackgroundBtsp">
+					<video src="Assets/Videos/vidRepair.mp4" autoplay muted loop></video>
+					<div href="" class="homeBoxesLettersBtsp">
+						<div class="homeBoxesLettersTituloBtsp">
+							Servicio de reparaciones
+						</div>
+						<div class="homeBoxesLettersContenidoBtsp">
+							Con más de 15 años de experiencia en el rubro de la tecnologia, tenemos a los mejores expertos para solucionar sus problemas.
+						</div>
+						<a href="Views/servicios.html" type="button" class="btn btn-success homeBoxesButtonPosition">Todos los servicios »</a>
+					</div>
+				</div>
+				<div class="col homeBoxesBackgroundBtsp homeBoxesBackgroundB">
+					<video src="Assets/Videos/vidServer.mp4" autoplay muted loop></video>
+					<div href="" class="homeBoxesLettersBtsp">
+						<div class="homeBoxesLettersTituloBtsp">
+							Alquiler de servidores
+						</div>
+						<div class="homeBoxesLettersContenidoBtsp">
+							Todo lo que necesitas para tener tu propio servidor, si ya tenes uno tambien ofrecemos mantenimiento y upgrade de servidores.
+						</div>
+						<a href="Views/servicios.html#bannerServidores" type="button" class="btn btn-success homeBoxesButtonPosition">Ver detalles »</a>
+					</div>
+				</div>
+				<div id="espacioVacioResponsive" class="col-1">
+					
+				</div>
+			</div>
+
+			<div class="row homeContactoBgkBtsp">
+				<div id="espacioVacioResponsive" class="col-1" style="background-color:gainsboro;">
+					
+				</div>
+
+				<a href="Views/contacto.html" class="col-5 d-block homeContactoLettersBtsp align-self-center webLinkNoColorB">
+					Contactanos
+				</a>
+
+				<a href="Views/Contacto.html" class="col d-block homeContactoImgBtsp">
+					<img src="Assets/Imagenes/ContactoBanner.png">
+				</a>
+
+				<div id="espacioVacioResponsive" class="col-1" style="background-color:gainsboro;">
+					
+				</div>
+			</div>
+
+			
+
+		</div>
+
+
+	</main>
+	<footer>
+		<div class="row no-gutters" style="background-color:rgb(237,237,237);">
+				<div id="espacioVacioResponsive" class="col-1" >
+					
+				</div>
+
+				<div class="col-md-10 d-block ">
+					<div class="d-flex footerBtsp">
+						<div>
+							Tech.Inc
+						</div>
+						<div class="align-self-center">
+							<a href="https://twitter.com/home"><img src="Assets/Imagenes/twtIcon.png" alt="Twitter" style="float: right;"></a>
+						</div>
+						<div class="align-self-center">
+							<a href="https://www.facebook.com/"><img src="Assets/Imagenes/fbIcon.png" style="float: right;" alt="Facebook"></a>
+						</div>
+						<div class="align-self-center">
+							<a href="https://www.youtube.com/"><img src="Assets/Imagenes/ytIcon.png" style="float: right;" alt="Facebook"></a>
+						</div>
+					</div>
+					<div>
+						<a href="#inicioPag">Volver al inicio</a>
+					</div>
+					<div>
+						<a href="">Soporte</a>
+					</div>
+					<div>
+						© 2020 Tech inc. Todos los derechos reservados.
+					</div>
+					<div>
+						C/ Los Condoritos, 69 (Parque industrial Paturuzito) · Tlf. <a href=" ">48 15162342</a>  · Fax. <a href="">0451 69 06 66</a>
+					</div>
+					
+				</div>
+
+				<div id="espacioVacioResponsive" class="col-1" >
+					
+				</div>
+			</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
