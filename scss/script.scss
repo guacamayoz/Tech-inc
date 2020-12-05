@@ -40,8 +40,7 @@ html{
     padding-left:0;
     overflow: hidden;
 }
-/*-----------------------------------BOOTSTRAP-----------------------------------*/
-/*-----------------------------------HEADERBTSP-----------------------------------*/
+/*-----------------------------------HEADER-----------------------------------*/
 .header__box{
 	position: sticky;
 	top: 0;
@@ -102,7 +101,7 @@ html{
 	75%{transform: rotateZ(5deg)}
 	100%{transform: rotateZ(0deg)}
 }
-/*-----------------------------------INDEXBTSP-----------------------------------*/
+/*-----------------------------------INDEX-----------------------------------*/
 #espacioVacioResponsive{
 	display: all;
 
@@ -269,7 +268,7 @@ html{
 	padding-right: 0;
 }
 
-/*-----------------------------------FOOTERBTSP-----------------------------------*/
+/*-----------------------------------PIE DE PAGINA-----------------------------------*/
 .footerBtsp{
 	font-size: 2vw;
 	margin-top: 1vw;
@@ -278,153 +277,6 @@ html{
 	margin-left: 0.5vw;
 	height: 3vw;
 }
-/*CSS SIN FRAMEWORK*/
-
-/*-----------------------------------PIE DE PAGINA-----------------------------------*/
-.webBackgroundColorFooter{
-	background: linear-gradient(to top, #ffffff 0%, #d1d1d1 100%);
-}
-.webFooterSeparador fieldset{
-	clear: left;
-	border-bottom: none;
-	border-left: none;
-	border-right: none;
-	text-align: center; 
-	color: gray;
-}
-.webRedesIconos img{
-	border-radius: 50%;
-	width: 50px;
-	height:50px;
-}
-/*-----------------------------------INDEX-----------------------------------*/
-/*FLEXPADRE BANNER BIENVENIDA*/
-.homeBienvenida{
-	display: flex;
-	flex-wrap: nowrap;
-	background-color: rgb(186,215,249);
-}
-/*FLEXHIJO BANNER BIENVENIDA*/
-	.homeBienvenidaImg img{
-		height: 25vw;
-}
-	.homeBienvenidaLetters{
-		height: 25vw;
-		background-color:rgb(186,215,249);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-}
-	.homeBienvenidaTitulo{
-		text-align: center;
-		font-weight: bold;
-		font-size: 4.5vw;
-		font-family: century gothic;
-}
-	.homeBienvenidaContenido{
-		margin-right: 2%;
-		text-align: center;
-		font-size: 1.56vw;
-		font-family: century gothic;
-}
-/*FLEXPADRE CONTENIDO*/
-.homeFlexPadre{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}
-/*FLEXHIJO CONTENIDO*/
-.homeFlexHijo{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	max-width: 33.3vw;
-	min-height: 30vw;
-	overflow: hidden;
-	height: 100%;
-	background-color: rgba(0,91,164,0.7);
-	/*rgb(225, 225, 231)*/
-}
-	.homeFlexHijoTitulo{
-		text-align: center;
-		font-weight: bold;
-		font-size: 3.5vw;
-		font-family: century gothic;
-		padding-top: 2vw;
-		color: white;
-	}
-	.HomeFlexHijoContenido{
-		margin-top: 10%;
-		margin-right: 5%;
-		margin-left: 5%;
-		text-align: left;
-		font-size: 2vw;
-		font-family: century gothic;
-		color: white;
-	}
-
-/*FONDOS DE LAS CAJAS*/
-.backgroundFlexbox {
-    position: relative;
-    overflow: hidden;
-}
-.backgroundFlexbox img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-	filter: grayscale(100);
-}
-.backgroundFlexbox video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-	filter: grayscale(100);
-}
-.backgroundFlexbox:hover img{
-	opacity: 0.6;
-	filter: grayscale(0);
-}
-.backgroundFlexbox:hover video{
-	opacity: 0.6;
-	filter: grayscale(0);
-}
-/*BANNER CONTACTO*/
-.homeContacto{
-	display: flex;
-	flex-direction: row;
-	background-color: rgb(186,215,249);
-	justify-content: space-between;
-}
-.homeContactoTitulo{
-	align-self: center;
-	margin-left: 10%;
-	font-weight: bold;
-	font-size: 3.5vw;
-	font-family: century gothic;
-	color: rgb(50,50,50);
-}
-.homeContactoImg img{
-	height: 15vw;
-}
-.homeContacto:hover .homeContactoImg{
-	opacity: 0.6;
-}
-.homeContacto:hover .homeContactoTitulo{
-	color: black;
-}
-.homeContacto:hover{
-	background-color: rgba(186,215,249,0.6);
-}
-
 /*-----------------------------------SERVICIOS.HTML-----------------------------------*/
 /*Inicio de servicios*/
 .serviciosIndiceBrg{
@@ -820,12 +672,10 @@ div#TextSEdicionD{grid-area: SArtEDTextD;}
 .flxFooterArtIcons{
 	display: flex;
 	flex-direction: row;
-
 }
 .flxFooterArtIcons img{
 	width: 7.5vw;
 }
-
 /*TITULOS*/
 .serviciosTitulos{
 	border-top: solid;
@@ -840,45 +690,6 @@ div#TextSEdicionD{grid-area: SArtEDTextD;}
 	text-align: center;
 	font-size: 15px;
 	background-color: rgba(255,255,255,0.5);
-}
-/*MEDIDAS DE LAS TABLAS*/
-.serviciosTablaMedidas{
-	margin-left: 18%;
-	width: 60vw;
-}
-table{
-	border-collapse: collapse;
-}
-.serviciosFuenteTitulo th{
-	border: solid;
-	background-color: silver;
-	font-size: 25px;
-	font-family: tahoma;
-}
-
-.serviciosFuenteContenido td{
-	border: solid;
-	background-color: ghostwhite;
-	font-size: 25px;
-	font-family: tahoma;
-}
-/*FONDO DE CONTENIDOS Y TABLAS*/
-.serviciosBackground{
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-size: 100% 100%;
-}
-.serviciosBrgCelulares{
-	background-image: url(../assets/imagenes/serviciosCelularesBgr.png);
-}
-.serviciosBrgComputadoras{
-	background-image: url(../assets/imagenes/serviciosComputadorasBgr.png);
-}
-.serviciosBrgServidores{
-	background-image: url(../assets/imagenes/serviciosServidoresBgr.png);
-}
-.serviciosBrgEdicion{
-	background-image: url(../assets/imagenes/serviciosEdicionBgr.png);
 }
 /*PIE DE PAGINA CON LINK A CONTACTO*/
 .serviciosReminderBox{
@@ -1248,13 +1059,6 @@ div#contactoCartel{
 }
 #contactoCartel img{
 	height: 25vw;
-}
-/*FORMULARIO DE CONTACTO*/
-.contactoFormulario{
-	padding-left: 35%;
-	text-align: center;
-	max-width: 300px;
-	font-family: tahoma;
 }
 /*-----------------------------------CARRO.HTML-----------------------------------*/
 /*TABLA CON OBJETOS ADQUIRIDOS*/
