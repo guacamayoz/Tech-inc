@@ -9,8 +9,7 @@ html {
 
 /*COLOR DE FONDO DE LA PAGINA*/
 .webBodyColorWhite {
-  background-color: white;
-  /*background-color: rgb(112,161,225);*/ }
+  background-color: white; }
 
 .webBodyColorGainsboro {
   background-color: gainsboro; }
@@ -326,7 +325,6 @@ html {
 /*GRILLA DE NAVEGACION SERVICIOS*/
 #grillaNavServicios {
   display: grid;
-  /*justify-content: center;*/
   align-items: center;
   grid-template-areas: "SNavImgA . SNavTextA . SNavImgB . SNavTextB" "SNavImgC . SNavTextC . SNavImgD . SNavTextD";
   grid-template-rows: 15vw 15vw;
@@ -1403,7 +1401,6 @@ div#contactoCartel {
   /*GRILLA DE NAVEGACION SERVICIOS*/
   #grillaNavServicios {
     display: grid;
-    /*justify-content: center;*/
     align-items: center;
     grid-template-areas: "SNavTextA . SNavImgA . SNavImgB . SNavTextB" "SNavTextC . SNavImgC . SNavImgD . SNavTextD";
     grid-template-rows: 15vw 15vw;

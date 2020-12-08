@@ -9,7 +9,6 @@ html{
 /*COLOR DE FONDO DE LA PAGINA*/
 .webBodyColorWhite{
 	background-color: white;
-	/*background-color: rgb(112,161,225);*/
 }
 .webBodyColorGainsboro{
 	background-color: gainsboro;
@@ -322,7 +321,6 @@ html{
 /*GRILLA DE NAVEGACION SERVICIOS*/
 #grillaNavServicios{
 	display: grid;
-	/*justify-content: center;*/
 	align-items: center;
 	grid-template-areas: 
 	"SNavImgA . SNavTextA . SNavImgB . SNavTextB"
@@ -1384,7 +1382,6 @@ $gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
 	/*GRILLA DE NAVEGACION SERVICIOS*/
 	#grillaNavServicios{
 		display: grid;
-		/*justify-content: center;*/
 		align-items: center;
 		grid-template-areas: 
 		"SNavTextA . SNavImgA . SNavImgB . SNavTextB"

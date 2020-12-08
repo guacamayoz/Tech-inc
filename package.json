@@ -1,7 +1,7 @@
 {
-  "name": "practico-final",
+  "name": "Desafio Final Techinc",
   "version": "1.0.0",
-  "description": "",
+  "description": "Entrega del desafio del curso de desarrollo web de coderhouse",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
 	"watch-css": "nodemon -e scss -x \"npm run build-css\""
 
   },
-  "author": "",
+  "author": "Pablo Benitez",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0",
