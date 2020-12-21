@@ -33,6 +33,10 @@ html{
 	text-decoration: none;
 	color: inherit;
 }
+.webLinkNoColorB:hover{
+	text-decoration: none;
+	color: inherit;
+}
 .webNoMargenContainer{
 	margin: 0;
 	padding-right:0;
@@ -53,6 +57,7 @@ html{
 	font-size: 1.2vw;
 	font-weight: bold;
 	align-self: center;
+	font-family: century gothic;
 	padding-right:0;
     padding-left:0;
 }
@@ -112,11 +117,11 @@ html{
 }
 .homeCarouselControlIzq{
 	background-color: black;
-	width: 1vw;
+	width: 3vw;
 }
 .homeCarouselControlDer{
 	background-color: black;
-	width: 1vw;
+	width: 3vw;
 }
 .homeCarouselTextA{
 	position: absolute;
@@ -127,14 +132,33 @@ html{
 	margin-left: 45vw;
 	margin-top: 1vw;
 }
+.homeCarouselTextA2{
+	position: absolute;
+	z-index: 2;
+	text-align: center;
+	color: white;
+	width: 45vw;
+	font-family: century gothic;
+	margin-left: 45vw;
+	margin-top: 1vw;
+}
+.homeCarouselTextA2 a{
+	margin-top:2vw;
+	font-size: 1.5vw;
+}
 .homeCarouselTextB{
 	position: absolute;
 	z-index: 2;
+	color: white;
 	text-align: center;
 	width: 43vw;
 	font-family: century gothic;
 	margin-left: 9vw;
-	margin-top: 2vw;
+	margin-top: 3vw;
+}
+.homeCarouselTextB a{
+	margin-top:2vw;
+	font-size: 1.5vw;
 }
 .homeCarouselTextC{
 	position: absolute;
@@ -145,6 +169,10 @@ html{
 	margin-left: 9vw;
 	margin-top: 2vw;
 	color: white;
+}
+.homeCarouselTextC a{
+	margin-top:2vw;
+	font-size: 1.5vw;
 }
 .homeCarouselTextTituloA{
 	font-size: 4.5vw;
@@ -166,20 +194,54 @@ html{
 	position: relative;
 	z-index: 1;
 }
-.homeBienvenidaBannerBtsp{
-	margin: 0;
-	padding-right:0;
-    padding-left:0;
+//Texto post Carousel//
+.homeTextoDestacado{
+	margin-top: 2vw;
+	text-align: center;
 }
-.homeBienvenidaBannerBtsp img{
-	width: 100%;
-}
-.homeBienvenidaTituloBtsp{
+.homeTextoDestacadoLogo{
+	font-family: century gothic;
 	font-size: 4vw;
 	font-weight: bold;
+	color: black;
 }
-.homeBienvenidaContenidoBtsp{
+.homeTextoDestacadoLogo img{
+	margin-right: 2vw;
+}
+.homeTextoDestacado img{
+	width: 5vw;
+	border-radius:2vw;
+}
+.homeTextoDestacadoTitulo{
+	font-size: 3vw;
+	font-weight: bold;
+}
+.homeTextoDestacadoContenido{
 	font-size: 1.5vw;
+	padding-right:10vw;
+	padding-left:10vw;
+}
+.homeDestacadoServicios img{
+	padding:1vw;
+	width:13vw;
+	height: 9vw;
+	opacity: 0.85;
+}
+.homeDestacadoServiciosBoxes{
+	margin-top: 3vw;
+	width: 15vw;
+	height: 13vw;
+	border-style:dashed;
+	border-color:gray;
+	margin-left: 2vw;
+	text-align:center;
+	font-size: 1vw;
+	font-weight: bold;
+}
+.homeTextoDestacadoSubTitulo{
+	margin-top: 3vw;
+	font-size: 3vw;
+	font-weight: bold;
 }
 .homeBoxesBackgroundBtsp{
     height: 30vw;
@@ -189,6 +251,7 @@ html{
     margin-top:3vw;
     margin-bottom: 2vw;
     box-shadow:0vw 0vw 1.5vw;
+    margin-bottom: 5vw;
 }
 .homeBoxesBackgroundA{
 	margin-right: 2vw;
@@ -269,12 +332,36 @@ html{
 
 /*-----------------------------------PIE DE PAGINA-----------------------------------*/
 .footerBtsp{
-	font-size: 2vw;
-	margin-top: 1vw;
+	font-size: 2.5vw;
+	text-align: center;
+	margin-top: 0.5vw;
+	color: white;
 }
-.footerBtsp img{
-	margin-left: 0.5vw;
+.footerSubBtsp{
+	color: white;
+}
+.footerLogo img{
+	filter: invert(100%);
+	height: 5vw;
+}
+.footerMedia{
+	font-size: 1vw;
+	color: white;
+}
+.footerMedia img{
+	margin-right: 1vw;
 	height: 3vw;
+}
+.footerMediaLocal{
+	font-size: 1vw;
+	color: white;
+}
+.footerMediaLocal img{
+	margin-right: 1vw;
+	height: 3vw;
+}
+.footerCopyright{
+	color: white;
 }
 /*-----------------------------------SERVICIOS.HTML-----------------------------------*/
 /*Inicio de servicios*/
@@ -1051,6 +1138,45 @@ div#contactoCartel{
 	width: 70%;
 	height: 20vw;
 }
+.contactoFormularioBackgrund{
+	border-radius: 2vw;
+	padding-top:1.5vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	padding-left:2vw;
+	background: linear-gradient(to bottom, #dbdbdb 0%, #ffffff 100%);
+	margin-bottom: 4vw;
+}
+.contactoFormulario{
+	width: 50vw;
+}
+.contactoFormulario button{
+	width: 20vw;
+	font-size: 1.3vw;
+	margin-left: 16vw;
+}
+#contactoFormNombre{
+	font-size: 1.5vw;
+}
+#contactoFormApellido{
+	font-size: 1.5vw;
+}
+#contactoFormEmail{
+	font-size: 1.5vw;
+	margin-top: 1vw;
+}
+.contactoFormAsunto{
+	font-size: 1.5vw;
+}
+#contactoFormSelector{
+	font-size: 1.5vw;
+}
+#contactoFormComment{
+	font-size: 1.5vw;
+}
+.contactoFormNewsletter{
+	font-size: 1.2vw;
+}
 #contactoCartel{
 	text-align: center;
 	background-color: black;
@@ -1220,6 +1346,22 @@ $gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
 		margin-top: 0vw;
 		padding-top:2vw;
 	}
+	.homeCarouselTextA2{
+		position: absolute;
+		z-index: 2;
+		width: 90%;
+		height: 100%;
+		margin-left: 5vw;
+		color: black;
+		background-color: rgba(255,255,255,0.7);
+		border-radius:5px;
+		margin-top: 0vw;
+		padding-top:2vw;
+	}
+	.homeCarouselTextA2 a{
+		margin-top:1vw;
+		font-size: 1.5rem;
+	}
 	.homeCarouselTextB{
 		position: absolute;
 		z-index: 2;
@@ -1231,6 +1373,10 @@ $gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
 		border-radius:5px;
 		margin-top: 0vw;
 		padding-top:2vw;
+	}
+	.homeCarouselTextB a{
+		margin-top:0vw;
+		font-size: 1.5rem;
 	}
 	.homeCarouselTextC{
 		position: absolute;
@@ -1244,11 +1390,16 @@ $gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
 		padding-top:2vw;
 		margin-top: 0vw;
 	}
+	.homeCarouselTextC a{
+		margin-top:1vw;
+		font-size: 1.5rem;
+	}
 	.homeCarouselTextTituloA{
 		font-size: 8vw;
 		font-weight: bold;
 	}
 	.homeCarouselTextTituloB{
+		margin-top: -2vw;
 		font-size: 8vw;
 		font-weight: bold;
 	}
@@ -1257,6 +1408,7 @@ $gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
 		font-weight: bold;
 	}
 	.homeCarouselTextContenidoB{
+		margin-top: -1vw;
 		font-size: 4vw;
 		font-weight: bold;
 	}
@@ -1265,6 +1417,55 @@ $gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
 		height: 40vw;
 		position: relative;
 		z-index: 1;
+	}
+	.homeTextoDestacado{
+		margin-top: 6vw;
+		text-align: center;
+	}
+	.homeTextoDestacadoLogo{
+		font-family: century gothic;
+		font-size: 6vw;
+		font-weight: bold;
+		color: black;
+	}
+	.homeTextoDestacadoLogo img{
+		margin-right: 2vw;
+		width: 6vw;
+	}
+	.homeTextoDestacadoTitulo{
+		padding-left:0;
+		padding-right:0;
+		font-size: 6vw;
+		font-weight: bold;
+	}
+	.homeTextoDestacadoContenido{
+		padding-left:0;
+		padding-right:0;
+		font-size: 4vw;
+		width: 100%;
+		margin-left: 0;
+	}
+	.homeDestacadoServicios img{
+		padding:1vw;
+		width:20vw;
+		height: 15vw;
+		opacity: 0.85;
+	}
+	.homeDestacadoServiciosBoxes{
+		margin-top: 3vw;
+		width: 25vw;
+		height: 26vw;
+		border-style:dashed;
+		border-color:gray;
+		margin-left: 2vw;
+		text-align:center;
+		font-size: 3vw;
+		font-weight: bold;
+	}
+	.homeTextoDestacadoSubTitulo{
+		margin-top: 3vw;
+		font-size: 5vw;
+		font-weight: bold;
 	}
 	.homeBoxesBackgroundBtsp{
 	    height: 50vw;
@@ -1640,7 +1841,6 @@ $gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
 	.flxFooterArtIcons{
 		display: flex;
 		flex-direction: row;
-
 	}
 	.flxFooterArtIcons img{
 		width: 5vw;
@@ -1934,6 +2134,45 @@ $gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
 		width: 70%;
 		height: 30vw;
 	}
+	.contactoFormularioBackgrund{
+		border-radius: 2vw;
+		padding-top:1.5vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		padding-left:2vw;
+		background: linear-gradient(to right, #dbdbdb 0%, #ffffff 100%);
+		margin-bottom: 4vw;
+	}
+	.contactoFormulario{
+		width: 100%;
+	}
+	.contactoFormulario button{
+		width: 50vw;
+		font-size: 4vw;
+		margin-left: 20vw;
+	}
+	#contactoFormNombre{
+		font-size: 4vw;
+	}
+	#contactoFormApellido{
+		font-size: 4vw;
+	}
+	#contactoFormEmail{
+		font-size: 4vw;
+		margin-top: 1vw;
+	}
+	.contactoFormAsunto{
+		font-size: 4vw;
+	}
+	#contactoFormSelector{
+		font-size: 4vw;
+	}
+	#contactoFormComment{
+		font-size: 4vw;
+	}
+	.contactoFormNewsletter{
+		font-size: 4vw;
+	}
 	#contactoCartel{
 		text-align: center;
 		background-color: black;
@@ -1981,14 +2220,41 @@ $gradientBoxCHover: linear-gradient(to bottom, #cbdde6 0%, #ffffff 100%);
 	}
 	/*FOOTER*/
 	.footerBtsp{
-		font-size: 6vw;
-		margin-top: 1vw;
-	}
-	.footerBtsp img{
-		margin-left: 0.5vw;
-		height: 8vw;
+	font-size: 6vw;
+	text-align: center;
+	margin-top: 0.5vw;
+	color: white;
 	}
 	.footerSubBtsp{
-		font-size: 3.5vw;
+		color: white;
+	}
+	.footerLogo img{
+		filter: invert(100%);
+		height: 10vw;
+	}
+	.footerMedia{
+		font-size: 4vw;
+		color: white;
+	}
+	.footerMedia img{
+		margin-right: 1vw;
+		height: 10vw;
+	}
+	.footerMedia div{
+		min-height: 20vw;
+	}
+	.footerMediaLocal{
+		font-size: 4vw;
+		color: white;
+	}
+	.footerMediaLocal div{
+		min-height: 20vw;
+	}
+	.footerMediaLocal img{
+		margin-right: 1vw;
+		height: 10vw;
+	}
+	.footerCopyright{
+		color: white;
 	}
 }
